@@ -70,7 +70,7 @@ check_install_pkgs ${RATOS_DEPS}
 
 
 # Install RatOS Configurator
-sudo -u "${BASE_USER}" bash /home/"${BASE_USER}"/ratos-configurator/scripts/setup.sh
+sudo -u "${BASE_USER}" bash /home/"${BASE_USER}"/ratos-configurator/app/scripts/setup.sh
 
 # Start the configurator so extensions can access the API
 echo "Starting RatOS Configurator"
