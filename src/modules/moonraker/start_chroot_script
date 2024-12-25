@@ -38,6 +38,7 @@ pushd "/home/${BASE_USER}" &> /dev/null || exit 1
 
 ## Step 2: clone moonraker repo
 gitclone MOONRAKER_REPO moonraker
+git checkout 71f9e677b81afcc6b99dd5002f595025c38edc7b
 
 ## Step 3: grep PKGLIST from install-moonraker.sh for dependencies
 echo_green "Generating packages file ..."
