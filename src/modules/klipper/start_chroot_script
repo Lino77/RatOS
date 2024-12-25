@@ -53,6 +53,7 @@ usermod -a -G "${KLIPPER_USER_GROUPS}" "${BASE_USER}"
 ## Clone klipper repo
 pushd "/home/${BASE_USER}" &> /dev/null || exit 1
 gitclone KLIPPER_REPO klipper
+git checkout b7233d1197d9a2158676ad39d02b80f787054e20
 
 ## Create needed dirs
 for dir in ${KLIPPER_USER_DIRS}; do
