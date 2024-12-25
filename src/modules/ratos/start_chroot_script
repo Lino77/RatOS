@@ -74,7 +74,7 @@ sudo -u "${BASE_USER}" bash /home/"${BASE_USER}"/ratos-configurator/app/scripts/
 
 # Start the configurator so extensions can access the API
 echo "Starting RatOS Configurator"
-pushd "/home/${BASE_USER}/ratos-configurator"
+pushd "/home/${BASE_USER}/ratos-configurator/app"
 sudo -u "${BASE_USER}" npm run start &
 # Wait for configurator to start
 # shellcheck disable=SC2016
@@ -86,7 +86,7 @@ echo $PATH
 ls -la /usr/local/bin
 
 # Install RatOS Configuration
-sudo -u "${BASE_USER}" /home/"${BASE_USER}"/printer_data/config/RatOS/scripts/ratos-install.sh
+#sudo -u "${BASE_USER}" /home/"${BASE_USER}"/printer_data/config/RatOS/scripts/ratos-install.sh
 
 # Create variant file
 echo "${BASE_DISTRO}" > /etc/"${BASE_DISTRO}"-variant
