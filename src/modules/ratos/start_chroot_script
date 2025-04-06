@@ -19,7 +19,7 @@ echo_green "Installing RatOS"
 
 pushd "/home/${BASE_USER}/printer_data/config"
 
-gitclone RATOS_CONFIG RatOS
+#gitclone RATOS_CONFIG RatOS
 gitclone RATOS_THEME .theme
 pushd "/home/${BASE_USER}"
 gitclone RATOS_CONFIGURATOR ratos-configurator
